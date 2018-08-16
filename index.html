@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>KEB Web Development</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/kebLogo.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="intro">
+      <header class="header-container">
+            <img src="img/kebLogo.png" alt="KEB Logo" class="logo">
+            <a class="hamburger trigger"><img src="img/ham-icon.png" class="icon"></a>
+      </header>
+
+      <div class="navState">
+         <ul id="nav">
+           <li><a href="#">Home</a> |<li>
+           <li><a href="#about">About</a> |<li>
+           <li><a href="#portfolio">Portfolio</a>  | <li>
+           <li><a href="#resume">Resume</a><li>
+         </ul>
+       </div>
+
+       <div id="text">
+         <span id="writeOut"></span>
+       </div>
+
+       <div class="blurb">
+         <h4 class="call">Scroll down to see the excitement of my world and my work.</h4>
+         <a href="#about" id="scrollButton"><img src="img/arrow.png"></a>
+       </div>
+    </div>
+
+    <div id="about">
+      <img src="img/me.jpg" class="me" alt="photo of Kyle Brewer">
+      <div class="synopsis">Born and raised in Louisville, I have come to web development through a few different career paths.  My interest was piqued and since then the learning hasn't stopped.  Code Louisville was a godsend for this former coding neophyte giving mentorship and a helping hand.  Through that program I learned Full Stack Javascript and I equally enjoy using the front-end and back-end skills acquried along the way.  I also love to learn other technologies whether it be a new framework, add-on, or even a new language. Stepping away from a computer screen I love sports, books, being outside, and making my son smile.  Now I think that I have used enough time on myself.
+        <ul class="social"> Contact Me<br>
+          <li><a><img src="img/email.png" alt="Email Logo" title="Email Me" class="icons trigForm"></a></li>
+          <li><a href="https://github.com/kyleb740"><img src="img/github.svg" title="Github" alt="Github Logo" class="icons"></a></li>
+          <li><a href="https://www.linkedin.com/in/kyleebrewer/"><img src="img/linkedin.png" title="Linkedin" alt="Linkedin Logo" class="icons"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="formState">
+      <form class="form" method="post" name ="contactform" action:"send_form_email.php">
+          <h4>Send me a message!</h4>
+          Enter Name: <input type:"text" name="name"><br>
+          Enter Email:  <input type:"text" name="email"><br>
+          Enter Message: <textarea name="comments"></textarea><br>
+          <input class="formButton" type="submit" value="Send Email">
+      </form>
+    </div>
+
+
+    <div id="portfolio">
+      <h2 class="portTitle">Portfolio</h2>
+      <div class="projects">
+          <div class="left"><h3>FoodShare</h3><p>Web platform focusing on eliminating food waste through user to user sharing of food and leftovers. CRUD application using Node.js, Express, and MongoDB.  User will be able upon login to post, edit, and delete food items and contact others in the community to eliminate food waste.  App uses USDA API to return ingredients of items upon request by user. Project still in development but ongoing code can be accessed on <a href="https://github.com/kyleb740/foodShare">github</a>. </p></div>
+          <div class="snap">
+            <img src="img/foodShare.png" class="snapshots" alt="Screenshot of FoodShare Project">
+            <img src="img/foodShare2.png" class="snapshots" alt="Another Screenshot of FoodShare Project">
+            <ul class="social"> Utilities<br>
+              <li><img src="img/github.svg" alt="Github Logo" title="Github" class="icons"></li>
+              <li><img src="img/node3.png" alt="Node Logo" title="Node.js" class="icons"></li>
+              <li><img src="img/mongodb.png" alt="MongoDB Logo" title="MongoDB" class="icons"></li>
+              <li><img src="img/mongoose.png" alt="Mongoose Logo" title="Mongoose" class="icons"></li>
+              <li><img src="img/javascript3.png" alt="javascript Logo" title="Javascript" class="icons"></li>
+              <li><img src="img/html5.png" alt="HTML Logo" title="HTML5" class="icons"></li>
+              <li><img src="img/css.png" alt="CSS Logo" title="CSS3" class="icons"></li>
+              <li><img src="img/git2.png" alt="Git Logo" title="git" class="icons"></li>
+              <li><img src="img/express3.png" alt="Express Logo" title="Express JS" class="icons"></li>
+            </ul>
+          </div>
+
+          <div class="right"><h3>CEB Designs</h3><p>Front End Design and Build for a local woodworker and contractor.  Site is responsive and mobile-first which includes contact, gallery, and shop.  Project code can be accessed on <a href="https://github.com/kyleb740/cebDesigns">github</a>.</p></div>
+          <div class="snap">
+            <img src="img/cebDesigns.png" class="snapshots" alt="Screenshot of CEB Designs Project">
+            <img src="img/cebDesigns2.png" class="snapshots" alt="Another Screenshot of CEB Designs Project">
+            <ul class="social"> Utilities<br>
+              <li><img src="img/github.svg" alt="Github Logo" title="Github" class="icons"></li>
+              <li><img src="img/javascript3.png" alt="javascript Logo" title="Javascript" class="icons"></li>
+              <li><img src="img/html5.png" alt="HTML Logo" title="HTML5" class="icons"></li>
+              <li><img src="img/git2.png" alt="Git Logo" title="git" class="icons"></li>
+              <li><img src="img/css.png" alt="CSS Logo" title="CSS3" class="icons"></li>
+              <li><img src="img/bootstrap.png" alt="Bootstrap Logo" title="Bootstrap" class="icons"></li>
+            </ul>
+          </div>
+
+          <div class="left"><h3>World Cup Quiz</h3><p>Personal project done for fun leading up to the 2018 World Cup.  Front End only project.  Uses Javascript to change the questions of the quiz based on user answers.  Eventually should lead the user to their prefect World Cup team.  Shame the USA did not make it :(</p></div>
+          <div class="snap">
+            <img src="img/worldCup.png" class="snapshots" alt="Screenshot of World Cup Project">
+            <img src="img/worldCup2.png" class="snapshots" alt="Another Screenshot of World Cup Project">
+            <ul class="social"> Utilities<br>
+              <li><img src="img/github.svg" alt="Github Logo" title="Github" class="icons"></li>
+              <li><img src="img/javascript3.png" alt="javascript Logo" title="Javascript" class="icons"></li>
+              <li><img src="img/html5.png" alt="HTML Logo" title="HTML5" class="icons"></li>
+              <li><img src="img/git2.png" alt="Git Logo" title="git" class="icons"></li>
+              <li><img src="img/css.png" alt="CSS Logo" title="CSS3" class="icons"></li>
+            </ul>
+          </div>
+      </div>
+
+    </div>
+
+    <div id="resume">
+      <h2 class="resumeTitle">Resume</h2>
+      <h4>Click <a href="#resume" class="trigResume">here</a> to view full resume or head over to <a href="https://www.linkedin.com/in/kyleebrewer/">Linkedin</a>.</h4>
+      <div class="resState">
+        <img class="res" src="img/resume.jpg" alt="Image of full resume">
+      </div>
+    </div>
+
+    <footer>&copy 2018 Kyle Brewer</footer>
+
+
+    <script src="home.js"></script>
+  </body>
+
+</html>
